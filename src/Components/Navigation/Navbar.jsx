@@ -25,7 +25,6 @@ export default function Navbar() {
                     {/* Mobile Menu Button */}
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300">
-                            <span className="absolute -inset-0.5" />
                             <span className="sr-only">Open main menu</span>
                             <Bars3Icon aria-hidden="true" className="block size-6 group-data-[open]:hidden" />
                             <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-[open]:block" />
@@ -33,18 +32,20 @@ export default function Navbar() {
                     </div>
 
                     {/* Logo */}
-                    <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">  
-                        <div className="flex-shrink-0 flex items-center justify-center">
-                            <img 
-                                className="h-11 w-auto" 
-                                src="/images/logo.png" 
-                                alt="Logo" 
-                            />
-                        </div>
+                    <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                        <a className="flex flex-0 items-center justify-center sm:items-stretch sm:justify-start" href="/">
+                            <div className="flex-shrink-0 flex items-center justify-center">
+                                <img
+                                    className="h-11 w-auto"
+                                    src="/images/logo.png"
+                                    alt="Logo"
+                                />
+                            </div>
 
-                        <div className="flex-shrink-0 flex items-center justify-center mx-4">
-                            <p className="text-xl font-semibold">Dengue Shield</p>
-                        </div>
+                            <div className="flex-shrink-0 flex items-center justify-center mx-4">
+                                <p className="text-xl font-semibold">Dengue Shield</p>
+                            </div>
+                        </a>
 
                         <div className="hidden sm:flex sm:justify-center sm:flex-1">
                             <div className="flex space-x-4">
@@ -72,7 +73,6 @@ export default function Navbar() {
                             </div>
                         </div>
                     </div>
-
 
                     {/* Notification & Profile */}
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
