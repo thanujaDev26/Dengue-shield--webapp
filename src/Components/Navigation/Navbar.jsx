@@ -33,7 +33,17 @@ export default function Navbar() {
                     </div>
 
                     {/* Logo */}
-                    <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">                    
+                        <div className="flex-shrink-0">
+                            <img 
+                                className="h-11 w-auto" 
+                                src="/images/logo.png" 
+                                alt="Logo" 
+                            />                            
+                        </div>
+                        <div className="flex-shrink-0 items-center justify-center sm:items-stretch sm:justify-start">
+                            <p>Dengue Shield</p>                            
+                        </div>
                         <div className="hidden sm:flex sm:justify-center sm:flex-1">
                             <div className="flex space-x-4">
                                 {navigation.map((item) => {
