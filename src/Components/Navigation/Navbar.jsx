@@ -33,17 +33,19 @@ export default function Navbar() {
                     </div>
 
                     {/* Logo */}
-                    <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">                    
-                        <div className="flex-shrink-0">
+                    <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">  
+                        <div className="flex-shrink-0 flex items-center justify-center">
                             <img 
                                 className="h-11 w-auto" 
                                 src="/images/logo.png" 
                                 alt="Logo" 
-                            />                            
+                            />
                         </div>
-                        <div className="flex-shrink-0 items-center justify-center sm:items-stretch sm:justify-start">
-                            <p>Dengue Shield</p>                            
+
+                        <div className="flex-shrink-0 flex items-center justify-center mx-4">
+                            <p className="text-xl font-semibold">Dengue Shield</p>
                         </div>
+
                         <div className="hidden sm:flex sm:justify-center sm:flex-1">
                             <div className="flex space-x-4">
                                 {navigation.map((item) => {
@@ -70,6 +72,7 @@ export default function Navbar() {
                             </div>
                         </div>
                     </div>
+
 
                     {/* Notification & Profile */}
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
