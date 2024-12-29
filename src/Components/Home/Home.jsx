@@ -10,7 +10,7 @@ const Home = () => {
           <p class="text-lg text-gray-600 mt-4">
             A sensor-based system detects mosquito breeding conditions and provides real-time alerts to prevent dengue outbreaks.
           </p>
-          <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-700">
+          <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-3xl hover:bg-gray-700">
             Learn More
           </button>
         </div>
@@ -22,41 +22,66 @@ const Home = () => {
       </div>
 
       {/*second section */}
-      <div className='md:m-8 m-4 rounded-3xl border-2 border-lime-500 container md:w-full w-11/12'>
-        <div className='flex flex-col md:flex-row items-center text-center'>           
-          <div className='md:m-5 m-5 text-start'>
-            <h1 className='text-3xl antialiased font-bold text-gray-600'>Key Features</h1>
+      <div className='w-full flex justify-center items-center bg-transparent'>
+        <div className='md:m-5 m-4 rounded-3xl border-2 border-lime-500 container md:w-full w-11/12 max-w-7xl'>
+          <div className='flex flex-col md:flex-row items-center text-center'>           
+            <div className='md:m-5 m-5 text-start'>
+              <h1 className='text-3xl antialiased font-bold text-gray-600'>Key Features</h1>
+            </div>
           </div>
+
+          <div className='flex flex-col md:flex-row items-center text-center'>           
+            <div className='md:m-4 m-4 rounded-3xl border-2 border-lime-500 md:w-1/3 w-11/12 '>
+              <div className='flex-shrink-0 flex items-center justify-center p-3'>
+                <img className="h-12 w-auto" src="/images/home_1.png" alt="Logo"/>          
+                <h1 className='p-1 text-xl font-bold text-gray-600'>Real-time Monitoring</h1>       
+              </div>            
+              <p className='py-1 px-10 text-md font-normal text-gray-600'>Uses IoT sensors to detect stagnant water sources and monitor weather patterns.</p>
+            </div>
+
+            <div className='md:m-4 m-4 rounded-3xl border-2 border-lime-500 md:w-1/3 w-11/12 '>
+              <div className='flex-shrink-0 flex items-center justify-center p-3'>
+                <img className="h-12 w-auto" src="/images/home_2.png" alt="Logo"/>          
+                <h1 className='p-1 text-xl font-bold text-gray-600'>Predictive Analytics</h1>       
+              </div>
+              <p className='py-1 px-10 text-md font-normal text-gray-600'>Analyzes historical and current data to predict potential outbreaks.</p>
+            </div>
+
+            <div className='md:m-4 m-4 rounded-3xl border-2 border-lime-500 md:w-1/3 w-11/12 '>
+              <div className='flex-shrink-0 flex items-center justify-center p-3'>
+                <img className="h-12 w-auto" src="/images/home_3.png" alt="Logo"/>          
+                <h1 className='p-1 text-xl font-bold text-gray-600'>Mosquito Surveillance</h1>       
+              </div>
+              <p className='py-1 px-10 text-md font-normal text-gray-600'>Maps areas with high mosquito populations and sends automated alerts.</p>
+            </div>
+          </div>   
+
+          <div className='flex flex-col md:flex-row items-center text-center'>           
+            <div className='md:m-4 m-4 rounded-3xl border-2 border-lime-500 md:w-1/3 w-11/12 '>
+              <div className='flex-shrink-0 flex items-center justify-center p-3'>
+                <img className="h-12 w-auto" src="/images/home_4.png" alt="Logo"/>          
+                <h1 className='p-1 text-xl font-bold text-gray-600'>Community Engagement</h1>       
+              </div>
+              <p className='py-1 px-10 text-md font-normal text-gray-600'>Encourages community involvement through reporting and educational resources.</p>
+            </div>
+
+            <div className='md:m-4 m-4 rounded-3xl border-2 border-lime-500 md:w-1/3 w-11/12 '>
+              <div className='flex-shrink-0 flex items-center justify-center p-3'>
+                <img className="h-12 w-auto" src="/images/home_5.png" alt="Logo"/>          
+                <h1 className='p-1 text-xl font-bold text-gray-600'>Data-Driven Insights</h1>       
+              </div>
+              <p className='py-1 px-10 text-md font-normal text-gray-600'>Data is analyzed with machine learning to provide actionable insights for mosquito prevention.</p>
+            </div>
+
+            <div className='md:m-4 m-4 rounded-3xl border-2 border-lime-500 md:w-1/3 w-11/12 '>
+              <div className='flex-shrink-0 flex items-center justify-center p-3'>
+                <img className="h-12 w-auto" src="/images/home_6.png" alt="Logo"/>          
+                <h1 className='p-1 text-xl font-bold text-gray-600'>Mapping Breeding Sites</h1>       
+              </div>
+              <p className='py-1 px-10 text-md font-normal text-gray-600'>The system maps high mosquito population areas, focusing on stagnant water sites.</p>
+            </div>
+          </div>     
         </div>
-        <div className='flex flex-col md:flex-row items-center text-center'>           
-          <div className='md:m-4 m-4 rounded-full border-2 border-lime-500 md:w-1/3 w-11/12 '>
-            <h1 className='p-1 text-xl font-bold text-gray-600'>Real-time Monitoring</h1>
-            <p className='py-1 px-10 text-md font-normal text-gray-600'>Uses IoT sensors to detect stagnant water sources and monitor weather patterns.</p>
-          </div>
-          <div className='md:m-4 m-4 rounded-full border-2 border-lime-500 md:w-1/3 w-11/12 '>
-            <h1 className='p-1 text-xl font-bold text-gray-600'>Predictive Analytics</h1>
-            <p className='py-1 px-10 text-md font-normal text-gray-600'>Analyzes historical and current data to predict potential outbreaks.</p>
-          </div>
-          <div className='md:m-4 m-4 rounded-full border-2 border-lime-500 md:w-1/3 w-11/12 '>
-            <h1 className='p-1 text-xl font-bold text-gray-600'>Mosquito Surveillance</h1>
-            <p className='py-1 px-10 text-md font-normal text-gray-600'>Maps areas with high mosquito populations and sends automated 
-            alerts.</p>
-          </div>
-        </div>   
-        <div className='flex flex-col md:flex-row items-center text-center'>           
-          <div className='md:m-4 m-4 rounded-full border-2 border-lime-500 md:w-1/3 w-11/12 '>
-            <h1 className='p-1 text-xl font-bold text-gray-600'>Community Engagement</h1>
-            <p className='py-1 px-10 text-md font-normal text-gray-600'>Encourages community involvement through reporting and educational resources..</p>
-          </div>
-          <div className='md:m-4 m-4 rounded-full border-2 border-lime-500 md:w-1/3 w-11/12 '>
-            <h1 className='p-1 text-xl font-bold text-gray-600'>Data-Driven Insights</h1>
-            <p className='py-1 px-10 text-md font-normal text-gray-600'>Data is analyzed with machine learning to provide actionable insights for mosquito prevention.</p>
-          </div>
-          <div className='md:m-4 m-4 rounded-full border-2 border-lime-500 md:w-1/3 w-11/12 '>
-            <h1 className='p-1 text-xl font-bold text-gray-600'>Mapping Breeding Sites</h1>
-            <p className='py-1 px-10 text-md font-normal text-gray-600'>The system maps high mosquito population areas, focusing on stagnant water sites.</p>
-          </div>
-        </div>     
       </div>
     </section>
   );
