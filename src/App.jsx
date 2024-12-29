@@ -15,7 +15,7 @@ function App() {
       <Navbar />
 
       {/* Main content */}
-      <div className="flex-1 bg-white overflow-y-auto p-6">
+      <div className="flex-1 bg-white overflow-y-auto p-0 m-0">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
