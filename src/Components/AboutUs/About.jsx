@@ -6,19 +6,53 @@ const About = () => {
       {/*top section introduction*/}
       <div class="flex flex-col md:flex-row items-center bg-transparent min-h-1/2 m-0 w-full p-0">
         <div class="md:w-1/2 p-12 text-center md:text-center">
-          <h1 class="text-5xl font-bold text-gray-800 leading-tight">Dengue Shield</h1>
-          <p class="text-lg text-gray-600 mt-4">
-            A sensor-based system detects mosquito breeding conditions and provides real-time alerts to prevent dengue outbreaks.
-          </p>
-          <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-3xl hover:bg-gray-700">
-            Learn More
-          </button>
+          <h1 class="text-5xl font-bold text-gray-800 leading-tight">Our Dengue Detection<br/>And<br/>Mitigation System</h1>
         </div>
 
         <div class="md:w-1/2 relative">
           <div class="absolute inset-0 bg-gradient-to-r from-white to-transparent md:block hidden"></div>
-          <img src="images/home_top.png" alt="Illustration" class="w-full h-auto object-cover"/>
+          <img src="images/about_main_img.png" alt="Illustration" class="w-full h-auto object-cover"/>
         </div>
+      </div>
+
+      {/*Second section*/} 
+      <div className='flex flex-col md:flex-row items-center justify-center w-full px-12 py-3'>
+        <div className='md:w-5/12 flex flex-col items-center justify-center'>
+          <div class="w-full flex justify-center items-center bg-transparent md:p-5 md:px-10">
+            <div className='text-start'>
+              <h1 className='text-4xl antialiased font-bold text-black p-1'>Our Mission</h1>
+            </div>        
+          </div>
+          <img src="images/about_vector1.png" className='hidden sm:block h-auto w-2/5'></img>
+        </div>
+        <div className='w-2/12 flex items-start'>
+          <img src="images/about_arrow_right.png" className='hidden sm:block h-auto w-1/8'></img>
+        </div>
+        <div className='md:w-5/12 w-full rounded-2xl border-2 border-emerald-300 bg-emerald-300 text-center'>
+          <p className='md:p-8 md:px-20 p-2 justify-center'>Our mission is to use advanced technology to prevent and control dengue fever, creating healthier communities through real-time surveillance, predictive analytics, and community engagement.</p>
+        </div>
+      </div>
+
+      <div className='flex flex-col md:flex-row items-center justify-center w-full px-12 py-3'>   
+          <div class="w-full bg-transparent md:p-5 md:px-10 block sm:hidden">
+            <div className='flex justify-center items-center text-start'>
+              <h1 className='text-4xl antialiased font-bold text-black p-1'>Our Vision</h1>
+            </div>        
+          </div>     
+        <div className='md:w-5/12 w-full rounded-2xl border-2 border-emerald-300 bg-emerald-300 text-center'>
+          <p className='md:p-8 md:px-20 p-2 justify-center'>Our vision is a dengue-free world. We strive to achieve this through continuous innovation,collaboration with health organizations and governments, and community engagement in combating dengue.</p>
+        </div>
+        <div className='w-2/12 flex items-end justify-end'>
+          <img src="images/about_arrow_left.png" className='hidden sm:block h-auto w-1/8'></img>
+        </div>
+        <div className='md:w-5/12 flex flex-col items-center justify-center'>
+          <div class="w-full bg-transparent md:p-5 md:px-10 hidden sm:block">
+            <div className='flex justify-center items-center text-start'>
+              <h1 className='text-4xl antialiased font-bold text-black p-1'>Our Vision</h1>
+            </div>        
+          </div>
+          <img src="images/about_vector2.png" className='hidden sm:block h-auto w-2/5'></img>
+        </div>        
       </div>
     </section>
   );
