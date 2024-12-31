@@ -1,12 +1,13 @@
-import './App.css';
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import "./App.css";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navigation/Navbar.jsx";
-import Home from './Components/Home/Home.jsx';
-import Dashboard from './Components/Dashboard/Dashboard.jsx';  // Your Dashboard page component
-import About from './Components/AboutUs/About.jsx';  // About Us page
-import Contact from './Components/ContactUs/Contact.jsx';  // Contact Us page
-import Login from './Components/Login/Login.jsx';  // Login page
+import Home from "./Components/Home/Home.jsx";
+import Dashboard from "./Components/Dashboard/Dashboard.jsx"; // Your Dashboard page component
+import About from "./Components/AboutUs/About.jsx"; // About Us page
+import Contact from "./Components/ContactUs/Contact.jsx"; // Contact Us page
+import Login from "./Components/Login/Login.jsx"; // Login page
+import Footer from "./Components/Footer/Footer.jsx";
 
 function App() {
   return (
@@ -21,12 +22,12 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />      
+          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }
 
 export default App;
-

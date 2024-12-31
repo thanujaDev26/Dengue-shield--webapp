@@ -1,11 +1,16 @@
-import React from 'react';
+import FeedbackForm from "./FeedBackForm";
+import WorkingAreaTable from "./WorkingTable";
 
-const Contact = () => {
+const ContactUs = () => {
   return (
-    <div className="text-center">
-      <h1 className="text-3xl font-semibold">Welcome to the Contact Page</h1>
+    <div>
+      {/* Feedback Form */}
+      <FeedbackForm />
+
+      {/* Open Hours */}
+      <WorkingAreaTable />
     </div>
   );
 };
 
-export default Contact;
+export default ContactUs;
