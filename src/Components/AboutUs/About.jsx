@@ -56,12 +56,15 @@ const About = () => {
       </div>
 
       {/*Third section */} 
-      <div className='flex flex-col md:flex-row items-center justify-center w-full px-12 py-3'>
+      <div className='w-full px-12 py-3'>
         <div class="w-full rounded-xl border-2 border-emerald-200 bg-gradient-to-b from-white to-emerald-300 md:block">
-          <div class="w-full flex justify-center items-center bg-transparent md:p-5 md:px-10">
-            <div className='text-start'>
-              <h1 className='text-4xl antialiased font-bold text-black p-1'>Our Mission</h1>
-            </div>        
+          <div class="w-full bg-transparent md:p-5 md:px-10">
+            <div className='flex items-center justify-center'>
+              <h1 className='text-4xl antialiased font-bold text-black p-1'>Our Services</h1>
+            </div>     
+            <div className='flex flex-col md:flex-row items-center justify-center'>
+                
+            </div>   
           </div>
         </div>
       </div>
