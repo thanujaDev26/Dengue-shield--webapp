@@ -15,7 +15,7 @@ const About = () => {
         </div>
       </div>
 
-      {/*Second section*/} 
+      {/*Second section mission vision*/} 
       <div className='flex flex-col md:flex-row items-center justify-center w-full px-12 py-3'>
         <div className='md:w-5/12 flex flex-col items-center justify-center'>
           <div class="w-full flex justify-center items-center bg-transparent md:p-5 md:px-10">
@@ -54,6 +54,8 @@ const About = () => {
           <img src="images/about_vector2.png" className='hidden sm:block h-auto w-2/5'></img>
         </div>        
       </div>
+
+      {/*Third section */} 
     </section>
   );
 };
