@@ -63,7 +63,22 @@ const About = () => {
               <h1 className='text-4xl antialiased font-bold text-black p-1'>Our Services</h1>
             </div>     
             <div className='flex flex-col md:flex-row items-center justify-center'>
-                
+                <div className='p-3 md:w-1/4 grid place-items-center'>
+                  <img src="images/about_service1.png" className='w-20 h-20'></img>
+                  <p className='p-2 text-lg font-semibold'>Real-time Surveillance</p>
+                </div>
+                <div className='p-3 md:w-1/4 grid place-items-center'>
+                  <img src="images/about_service2.png" className='w-20 h-20'></img>
+                  <p className='p-2 text-lg font-semibold'>Predictive Analytics</p>
+                </div>
+                <div className='p-3 md:w-1/4 grid place-items-center'>
+                  <img src="images/about_service3.png" className='w-20 h-20'></img>
+                  <p className='p-2 text-lg font-semibold'>Community Engagement</p>
+                </div>
+                <div className='p-3 md:w-1/4 grid place-items-center'>
+                  <img src="images/about_service4.png" className='w-20 h-20'></img>
+                  <p className='p-2 text-lg font-semibold'>Mobile Application</p>
+                </div>
             </div>   
           </div>
         </div>
