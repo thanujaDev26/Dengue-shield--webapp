@@ -55,7 +55,7 @@ const About = () => {
         </div>        
       </div>
 
-      {/*Third section */} 
+      {/*Third section Our Services*/} 
       <div className='w-full px-12 py-3'>
         <div class="w-full rounded-xl border-2 border-emerald-200 bg-gradient-to-b from-white to-emerald-300 md:block">
           <div class="w-full bg-transparent md:p-5 md:px-10">
@@ -80,6 +80,59 @@ const About = () => {
                   <p className='p-2 text-lg font-semibold'>Mobile Application</p>
                 </div>
             </div>   
+          </div>
+        </div>
+      </div>
+
+      {/*Fourth section What We Do*/} 
+      <div className='w-full px-12 py-3'>
+        <div>
+          <h1 className='text-4xl antialiased font-bold text-black p-1'>What We Do</h1>
+        </div>
+        <div className='flex flex-col md:flex-row items-center justify-center'>
+          <div className='md:w-3/5 md:p-2'>
+            <p className='text-2xl md:p-5 flex justify-center items-center md:text-left text-center'>
+            Our system uses IoT sensors, data analytics, and mobile apps to prevent and control dengue by monitoring, predicting outbreaks, and providing actionable insights for proactive measures.
+            </p>
+          </div>
+          <div className='md:w-2/5'>
+            <img src="images/about_whatwedo.png" className='w-50 h-50'></img>
+          </div>
+        </div>
+      </div>
+
+      {/*Fifth section Why Choose Us*/} 
+      <div className='w-full px-12 py-3'>
+        <div>
+          <h1 className='text-4xl antialiased font-bold text-black p-1'>Why Choose Us</h1>
+        </div>
+        <div className='w-full flex justify-center items-center bg-transparent'>
+          <div className='md:m-5 m-4 rounded-3xl border-2 border-emerald-500 container md:w-full w-11/12 max-w-7xl'>
+            <div className='flex flex-col md:flex-row items-center text-center'>           
+              <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 md:h-40 h-fit shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
+                <div className='flex-shrink-0 flex items-center justify-center p-3'>
+                  <img className="h-12 w-auto" src="/images/about_chooseus1.png" alt="Logo"/>          
+                  <h1 className='p-1 text-xl font-bold text-gray-600'>Community Engagement</h1>       
+                </div>
+                <p className='py-1 md:px-10 px-4 text-md font-normal text-gray-600'>Encourages community involvement through reporting and educational resources.</p>
+              </div>
+
+              <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 md:h-40 h-fit shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
+                <div className='flex-shrink-0 flex items-center justify-center p-3'>
+                  <img className="h-12 w-auto" src="/images/about_chooseus2.png" alt="Logo"/>          
+                  <h1 className='p-1 text-xl font-bold text-gray-600'>Collaboration</h1>       
+                </div>
+                <p className='py-1 md:px-10 px-4 text-md font-normal text-gray-600'>We work closely with local and global partners to enhance the effectiveness of our system.</p>
+              </div>
+
+              <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 md:h-40 h-fit shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
+                <div className='flex-shrink-0 flex items-center justify-center p-3'>
+                  <img className="h-12 w-auto" src="/images/about_chooseus3.png" alt="Logo"/>          
+                  <h1 className='p-1 text-xl font-bold text-gray-600'>Integrity</h1>       
+                </div>
+                <p className='py-1 md:px-10 px-4 text-md font-normal text-gray-600'>In our work, it ensures transparency, accuracy, and ethical practices, fostering trust and confidence.</p>
+              </div>
+            </div>     
           </div>
         </div>
       </div>
