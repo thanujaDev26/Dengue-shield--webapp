@@ -28,7 +28,7 @@ const About = () => {
         <div className='w-2/12 flex items-start'>
           <img src="images/about_arrow_right.png" className='hidden sm:block h-auto w-1/8'></img>
         </div>
-        <div className='md:w-5/12 w-full rounded-2xl border-2 border-emerald-300 bg-emerald-300 text-center'>
+        <div className='md:w-5/12 w-full rounded-2xl border-2 border-emerald-200 bg-emerald-200 text-center'>
           <p className='md:p-8 md:px-20 p-2 justify-center'>Our mission is to use advanced technology to prevent and control dengue fever, creating healthier communities through real-time surveillance, predictive analytics, and community engagement.</p>
         </div>
       </div>
@@ -39,7 +39,7 @@ const About = () => {
               <h1 className='text-4xl antialiased font-bold text-black p-1'>Our Vision</h1>
             </div>        
           </div>     
-        <div className='md:w-5/12 w-full rounded-2xl border-2 border-emerald-300 bg-emerald-300 text-center'>
+        <div className='md:w-5/12 w-full rounded-2xl border-2 border-emerald-200 bg-emerald-200 text-center'>
           <p className='md:p-8 md:px-20 p-2 justify-center'>Our vision is a dengue-free world. We strive to achieve this through continuous innovation,collaboration with health organizations and governments, and community engagement in combating dengue.</p>
         </div>
         <div className='w-2/12 flex items-end justify-end'>
@@ -56,6 +56,33 @@ const About = () => {
       </div>
 
       {/*Third section */} 
+      <div className='w-full px-12 py-3'>
+        <div class="w-full rounded-xl border-2 border-emerald-200 bg-gradient-to-b from-white to-emerald-300 md:block">
+          <div class="w-full bg-transparent md:p-5 md:px-10">
+            <div className='flex items-center justify-center'>
+              <h1 className='text-4xl antialiased font-bold text-black p-1'>Our Services</h1>
+            </div>     
+            <div className='flex flex-col md:flex-row items-center justify-center'>
+                <div className='p-3 md:w-1/4 grid place-items-center'>
+                  <img src="images/about_service1.png" className='w-20 h-20'></img>
+                  <p className='p-2 text-lg font-semibold'>Real-time Surveillance</p>
+                </div>
+                <div className='p-3 md:w-1/4 grid place-items-center'>
+                  <img src="images/about_service2.png" className='w-20 h-20'></img>
+                  <p className='p-2 text-lg font-semibold'>Predictive Analytics</p>
+                </div>
+                <div className='p-3 md:w-1/4 grid place-items-center'>
+                  <img src="images/about_service3.png" className='w-20 h-20'></img>
+                  <p className='p-2 text-lg font-semibold'>Community Engagement</p>
+                </div>
+                <div className='p-3 md:w-1/4 grid place-items-center'>
+                  <img src="images/about_service4.png" className='w-20 h-20'></img>
+                  <p className='p-2 text-lg font-semibold'>Mobile Application</p>
+                </div>
+            </div>   
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
