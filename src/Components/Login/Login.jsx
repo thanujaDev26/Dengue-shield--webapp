@@ -11,7 +11,7 @@ const Login = () => {
           <img src="images/Login.png" alt="Illustration" class="w-full h-auto object-cover md:block hidden"/>
         </div>
 
-        <div class="md:w-2/4 relative border-2 border-teal-300 rounded-3xl p-4 grid place-items-center">
+        <div class="md:w-2/4 relative border-2 border-teal-300 rounded-3xl p-4 grid place-items-center bg-teal-100">
           <div className='p-5 '>
             <h1 class="text-4xl font-bold text-gray-800 leading-tight pt-5">Login</h1>
           </div>
