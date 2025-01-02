@@ -3,7 +3,7 @@ export default function Databoard() {
       <div className='w-full flex justify-center items-center bg-transparent'>
         <div className='md:m-5 m-4 rounded-3xl border-emerald-500 container md:w-full w-11/12 max-w-7xl'>
           <div className='flex flex-col md:flex-row items-center text-center'>
-            <div className='md:m-5 m-5 text-start'>
+            <div className='md:m-5 m-5 text-end'>
               <h1 className='text-3xl antialiased font-bold text-gray-600'>Real-time Sensor Data</h1>
             </div>
           </div>
