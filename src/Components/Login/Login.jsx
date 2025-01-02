@@ -21,10 +21,10 @@ const Login = () => {
               <input type="text" className='w-10/12 h-10 rounded-3xl m-5 p-4 focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300' placeholder='Password'></input>
               <div className='w-10/12 flex'>
                 <div className='flex w-1/2 text-left justify-start'>
-                  <input type="checkbox" className='m-1 w-10'></input><p>Remember me</p>  
+                  <input type="checkbox" className='m-1 w-10'></input><p className='font-semibold'>Remember me</p>  
                 </div>            
                 <div className='flex text-right justify-end w-1/2'>
-                  <a className='m-1'>Fogot Password?</a>
+                  <a className='m-1 font-semibold' href="">Fogot Password?</a>
                 </div>
               </div>
               <button class="md:w-1/4 w-1/2 px-6 py-3 my-8 bg-teal-500 text-white rounded-3xl hover:bg-teal-300 hover:text-black">
