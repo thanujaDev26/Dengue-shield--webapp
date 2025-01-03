@@ -1,23 +1,33 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const onChangeLocation = () => {
+    navigate('/about');  // Redirect to internal route
+  };
+
   return (
     <section className='m-0'>
       {/*top section introduction*/}
-      <div class="flex flex-col md:flex-row items-center bg-transparent min-h-1/2 m-0 w-full p-0">
-        <div class="md:w-1/2 p-12 text-center md:text-center">
-          <h1 class="text-5xl font-bold text-gray-800 leading-tight">Dengue Shield</h1>
-          <p class="text-lg text-gray-600 mt-4">
-            A sensor-based system detects mosquito breeding conditions and provides real-time alerts to prevent dengue outbreaks.
-          </p>
-          <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-3xl hover:bg-gray-700">
-            Learn More
-          </button>
-        </div>
+      <div className="flex flex-col md:flex-row items-center bg-transparent min-h-1/2 m-0 w-full p-0">
+        <div className="md:w-1/2 p-12 text-center md:text-center">
+        <h1 className="text-5xl font-bold text-gray-800 leading-tight">Dengue Shield</h1>
+        <p className="text-lg text-gray-600 mt-4">
+          A sensor-based system detects mosquito breeding conditions and provides real-time alerts to prevent dengue outbreaks.
+        </p>
+        <button
+          onClick={onChangeLocation}
+          className="mt-6 px-6 py-3 bg-gray-800 text-white rounded-3xl hover:bg-gray-700"
+        >
+          Learn More
+        </button>
+      </div>
 
-        <div class="md:w-1/2 relative">
-          <div class="absolute inset-0 bg-gradient-to-r from-white to-transparent md:block hidden"></div>
-          <img src="images/home_top.png" alt="Illustration" class="w-full h-auto object-cover"/>
+        <div className="md:w-1/2 relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-white to-transparent md:block hidden"></div>
+          <img src="images/home_top.png" alt="Illustration" className="w-full h-auto object-cover"/>
         </div>
       </div>
 
@@ -107,13 +117,13 @@ const Home = () => {
             <h1 className='text-3xl antialiased font-bold text-black'>Importance of Our System</h1>
           </div>
           <div>
-            <div class="flex">
+            <div className="flex">
               <div>
-                <label for="username" class="block text-sm/6 font-medium text-gray-900">Username</label>
+                <label className="block text-sm/6 font-medium text-gray-900">Username</label>
               </div>              
-              <div class="">
-                <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">                  
-                  <input type="text" name="username" id="username" class="block min-w-0 grow pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6" placeholder="Enter Your Email Here"/>
+              <div className="">
+                <div className="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">                  
+                  <input type="text" name="username" id="username" className="block min-w-0 grow pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6" placeholder="Enter Your Email Here"/>
                 </div>
               </div>
             </div>
