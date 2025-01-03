@@ -41,7 +41,7 @@ const Home = () => {
           </div>
 
           <div className='flex flex-col md:flex-row items-center text-center'>           
-            <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
+            <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500  bg-emerald-50 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
               <div className='flex-shrink-0 flex items-center justify-center p-3'>
                 <img className="h-12 w-auto" src="/images/home_1.png" alt="Logo"/>          
                 <h1 className='p-1 text-xl font-bold text-gray-600'>Real-time Monitoring</h1>       
@@ -51,7 +51,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
+            <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500  bg-emerald-50 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
               <div className='flex-shrink-0 flex items-center justify-center p-3'>
                 <img className="h-12 w-auto" src="/images/home_2.png" alt="Logo"/>          
                 <h1 className='p-1 text-xl font-bold text-gray-600'>Predictive Analytics</h1>       
@@ -59,7 +59,7 @@ const Home = () => {
               <p className='py-1 px-10 text-md font-normal text-gray-600'>Analyzes historical and current data to predict potential outbreaks.</p>
             </div>
 
-            <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
+            <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500  bg-emerald-50 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
               <div className='flex-shrink-0 flex items-center justify-center p-3'>
                 <img className="h-12 w-auto" src="/images/home_3.png" alt="Logo"/>          
                 <h1 className='p-1 text-xl font-bold text-gray-600'>Mosquito Surveillance</h1>       
@@ -69,7 +69,7 @@ const Home = () => {
           </div>   
 
           <div className='flex flex-col md:flex-row items-center text-center'>           
-            <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
+            <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500  bg-emerald-50 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
               <div className='flex-shrink-0 flex items-center justify-center p-3'>
                 <img className="h-12 w-auto" src="/images/home_4.png" alt="Logo"/>          
                 <h1 className='p-1 text-xl font-bold text-gray-600'>Community Engagement</h1>       
@@ -77,7 +77,7 @@ const Home = () => {
               <p className='py-1 px-10 text-md font-normal text-gray-600'>Encourages community involvement through reporting and educational resources.</p>
             </div>
 
-            <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
+            <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500  bg-emerald-50 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
               <div className='flex-shrink-0 flex items-center justify-center p-3'>
                 <img className="h-12 w-auto" src="/images/home_5.png" alt="Logo"/>          
                 <h1 className='p-1 text-xl font-bold text-gray-600'>Data-Driven Insights</h1>       
@@ -85,7 +85,7 @@ const Home = () => {
               <p className='py-1 px-10 text-md font-normal text-gray-600'>Data is analyzed with machine learning to provide actionable insights for mosquito prevention.</p>
             </div>
 
-            <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
+            <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500   bg-emerald-50 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
               <div className='flex-shrink-0 flex items-center justify-center p-3'>
                 <img className="h-12 w-auto" src="/images/home_6.png" alt="Logo"/>          
                 <h1 className='p-1 text-xl font-bold text-gray-600'>Mapping Breeding Sites</h1>       
@@ -111,7 +111,7 @@ const Home = () => {
       </div>
 
       {/*Forth Section - Subscribe*/}
-      <div className='w-full flex justify-center items-center bg-gradient-to-r from-emerald-500 to-transparent'>
+      <div className='w-full flex justify-center items-center bg-gradient-to-r from-teal-100 to-transparent'>
         <div className='md:m-5 m-4 rounded-3xl border-0 container md:w-full w-11/12 max-w-7xl'>
           <div className='md:m-5 m-5 text-start'>
             <h1 className='text-3xl antialiased font-bold text-black'>Importance of Our System</h1>
