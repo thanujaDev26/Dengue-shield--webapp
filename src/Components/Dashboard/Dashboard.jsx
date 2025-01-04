@@ -1,9 +1,11 @@
-import React from 'react';
+import Databoard from './Databoard.jsx'
+import Landing from "./Landing.jsx";
 
 const Dashboard = () => {
   return (
     <div className="text-center">
-      <h1 className="text-3xl font-semibold">Welcome to the Dashboard Page</h1>
+        <Landing/>
+        <Databoard/>
     </div>
   );
 };
