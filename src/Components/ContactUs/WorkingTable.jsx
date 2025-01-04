@@ -41,7 +41,7 @@ const WorkingAreaTable = () => {
   ];
 
   return (
-    <div className="p-4 bg-gray-100 min-h-screen flex justify-center items-center">
+    <div className="p-4 bg-white min-h-screen flex justify-center items-center">
       <div className="overflow-auto w-full max-w-6xl max-h-96 border border-gray-400">
         <table className="table-auto w-full border-collapse border border-gray-400">
           <tbody>
