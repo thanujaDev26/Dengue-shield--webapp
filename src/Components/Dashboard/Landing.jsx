@@ -8,8 +8,7 @@ export default function Landing() {
 
                 <div className="md:w-1/2 relative">
                     <div className="absolute inset-0 bg-gradient-to-r from-white to-transparent md:block hidden"></div>
-                    <img src="images/home_top.png" alt="Dashboard Illustration" className="w-full h-auto object-cover"/>
-                    
+                    <img src="images/Dashboard_main.jpeg" alt="Dashboard Illustration" className="w-full h-auto object-cover"/>                    
                 </div>
             </div>
         </div>
