@@ -38,7 +38,7 @@ export default function Navbar() {
                         </Link>
                     </div>
 
-                    <div className="hidden sm:flex sm:flex-1 justify-center border-2 border-black">
+                    <div className="hidden sm:flex sm:flex-1 justify-center border-0">
                         <div className="flex space-x-4">
                             {navigation.map((item) => (
                                 <Link
@@ -58,7 +58,7 @@ export default function Navbar() {
                     </div>
 
 
-                    <div className="ml-auto flex items-center space-x-4 min-w-[200px] border-2 border-black justify-center">
+                    <div className="ml-auto flex items-center space-x-4 min-w-[200px] border-0 justify-center">
                         {isLoggedIn ? (
                             <>
                                 
