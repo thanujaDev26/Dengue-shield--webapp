@@ -1,9 +1,21 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const Login = () => {
+
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form data submitted');
+    localStorage.setItem('isLoggedIn', true);
+    navigate('/dashboard');
+  }
+
   return (
     <section className='m-0'>
-      {/*top section introduction*/}
+      
       <div class="flex md:flex-row flex-col p-10 items-center bg-gradient-to-b from-white to-teal-200 min-h-1/2 m-0 w-full">
         <div class="md:w-2/4 p-12 text-center md:text-center">
           <h1 class="text-4xl font-bold text-gray-800 leading-tight pb-5">Welcome Back !</h1>
@@ -24,10 +36,10 @@ const Login = () => {
                   <input type="checkbox" className='m-1 w-10'></input><p className='font-semibold'>Remember me</p>  
                 </div>            
                 <div className='flex text-right justify-end w-1/2'>
-                  <a className='m-1 font-semibold' href="">Fogot Password?</a>
+                  <a className='m-1 font-semibold' href="">Forgot Password?</a>
                 </div>
               </div>
-              <button class="md:w-1/4 w-1/2 px-6 py-3 my-8 bg-teal-500 text-white rounded-3xl hover:bg-teal-300 hover:text-black">
+              <button class="md:w-1/4 w-1/2 px-6 py-3 my-8 bg-teal-500 text-white rounded-3xl hover:bg-teal-300 hover:text-black" onClick={handleSubmit}>
                 Log In
               </button>
             </div>

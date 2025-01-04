@@ -3,19 +3,20 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon, UserIcon, PlusCircleIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 
-const navigation = [
-    { name: 'Home', href: '/', current: false },
-    { name: 'Dashboard', href: '/dashboard', current: false },
-    { name: 'About Us', href: '/about', current: false },
-    { name: 'Contact Us', href: '/contact', current: false },
-];
-
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
 }
 
 export default function Navbar() {
-    const [isLoggedIn, setIsLoggedIn] = useState(false); // Manage login state
+    const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+    const navigation = [
+        { name: 'Home', href: '/', current: false },
+        ...(isLoggedIn ? [{ name: 'Dashboard', href: '/dashboard', current: false }] : []),
+        { name: 'About Us', href: '/about', current: false },
+        { name: 'Contact Us', href: '/contact', current: false },
+        
+    ];
 
     return (
         <Disclosure as="nav" className="border-b border-gray-200">
@@ -149,34 +150,6 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-
-            {/* Mobile Menu */}
-            <DisclosurePanel className="sm:hidden">
-                <div className="fixed inset-0 z-50 flex">
-                    <div className="relative w-64 bg-white p-4 flex flex-col space-y-4">
-                        <DisclosureButton className="absolute top-4 right-4 text-gray-700">
-                            <XMarkIcon className="size-6" />
-                        </DisclosureButton>
-                        {navigation.map((item) => (
-                            <a
-                                key={item.name}
-                                href={item.href}
-                                className="text-gray-500 hover:bg-gray-100 hover:text-gray-700 block rounded-md px-3 py-2 text-base font-medium"
-                            >
-                                {item.name}
-                            </a>
-                        ))}
-                        {/* Authentication Links for Mobile */}
-                        {!isLoggedIn && (
-                            <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                                <Link to="/sign-in" className="block text-gray-900">Sign in</Link>
-                                <Link to="/create-account" className="block text-gray-900">Create Account</Link>
-                            </div>
-                        )}
-                    </div>
-                    <div className="flex-1 bg-black/50" />
-                </div>
-            </DisclosurePanel>
         </Disclosure>
     );
 }
