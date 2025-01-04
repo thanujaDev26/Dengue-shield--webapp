@@ -11,7 +11,7 @@ export default function Databoard() {
           <div className='flex flex-col md:flex-row items-center text-center'>
             <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
               <div className='flex-shrink-0 flex items-center justify-center p-3'>
-                <img className="h-12 w-auto" src="/images/humidity.png" alt="Humidity"/>
+                <img className="h-12 w-auto" src="/images/Dashboard_1.svg" alt="Humidity"/>
                 <h1 className='p-1 text-xl font-bold text-gray-600'>Humidity</h1>
               </div>
               <p className='py-1 px-10 text-md font-normal text-gray-600'>Monitors real-time humidity levels.</p>
@@ -19,7 +19,7 @@ export default function Databoard() {
 
             <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
               <div className='flex-shrink-0 flex items-center justify-center p-3'>
-                <img className="h-12 w-auto" src="/images/water_level.png" alt="Water Level"/>
+                <img className="h-12 w-auto" src="/images/Dashboard_2.svg" alt="Water Level"/>
                 <h1 className='p-1 text-xl font-bold text-gray-600'>Water Level</h1>
               </div>
               <p className='py-1 px-10 text-md font-normal text-gray-600'>Tracks water levels in containers.</p>
@@ -27,7 +27,7 @@ export default function Databoard() {
 
             <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
               <div className='flex-shrink-0 flex items-center justify-center p-3'>
-                <img className="h-12 w-auto" src="/images/water_flow.png" alt="Water Flow"/>
+                <img className="h-12 w-auto" src="/images/Dashboard_3.svg" alt="Water Flow"/>
                 <h1 className='p-1 text-xl font-bold text-gray-600'>Water Flow Speed</h1>
               </div>
               <p className='py-1 px-10 text-md font-normal text-gray-600'>Monitors water flow speed in real time.</p>
@@ -37,7 +37,7 @@ export default function Databoard() {
           <div className='flex flex-col md:flex-row items-center text-center'>
             <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
               <div className='flex-shrink-0 flex items-center justify-center p-3'>
-                <img className="h-12 w-auto" src="/images/temperature.png" alt="Temperature"/>
+                <img className="h-12 w-auto" src="/images/Dashboard_4.svg" alt="Temperature"/>
                 <h1 className='p-1 text-xl font-bold text-gray-600'>Temperature</h1>
               </div>
               <p className='py-1 px-10 text-md font-normal text-gray-600'>Real-time temperature monitoring.</p>
@@ -45,7 +45,7 @@ export default function Databoard() {
 
             <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
               <div className='flex-shrink-0 flex items-center justify-center p-3'>
-                <img className="h-12 w-auto" src="/images/water_quality.png" alt="Water Quality"/>
+                <img className="h-12 w-auto" src="/images/Dashboard_5.svg" alt="Water Quality"/>
                 <h1 className='p-1 text-xl font-bold text-gray-600'>Water Quality</h1>
               </div>
               <p className='py-1 px-10 text-md font-normal text-gray-600'>Analyzes water quality in real time.</p>
@@ -53,7 +53,7 @@ export default function Databoard() {
 
             <div className='md:m-4 m-4 rounded-3xl border-2 border-emerald-500 md:w-1/3 w-11/12 h-40 shadow-2xl transition duration-700 ease-in-out hover:scale-105'>
               <div className='flex-shrink-0 flex items-center justify-center p-3'>
-                <img className="h-12 w-auto" src="/images/location.png" alt="Location"/>
+                <img className="h-12 w-auto" src="/images/home_6.png" alt="Location"/>
                 <h1 className='p-1 text-xl font-bold text-gray-600'>Sensor Location</h1>
               </div>
               <p className='py-1 px-10 text-md font-normal text-gray-600'>Displays sensor-detected locations.</p>

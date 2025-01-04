@@ -7,7 +7,6 @@ const Dashboard = () => {
         <Landing/>
         <Databoard/>
     </div>
-
   );
 };
 

@@ -1,10 +1,9 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
-// Example user authentication state (replace this with your actual auth logic)
-const isAuthenticated = true; // Example: User is logged in
-const isPHIOrOfficer = true; // Example: User is PHI or Officer
 
+const isAuthenticated = true; // Example: Usd in
+const isPHIOrOfficer = true; // Example: User is PHI or Office
 const navigation = [
     { name: 'Home', href: '/', current: false, authRequired: false },
     { name: 'Dashboard', href: '/dashboard', current: false, authRequired: true, role: 'PHI' },
@@ -69,12 +68,11 @@ export default function Navbar() {
                                             {item.name}
                                         </a>
                                     );
+                                
                                 })}
                             </div>
                         </div>
                     </div>
-
-                    {/* Notification & Profile */}
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         {isAuthenticated && (
                             <button

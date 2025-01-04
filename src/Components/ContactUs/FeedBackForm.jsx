@@ -23,7 +23,7 @@ const FeedbackForm = () => {
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-teal-100 p-8 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-center text-xl font-bold mb-6">Feedback Form</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-2">
           <div>
             <label
               htmlFor="name"
