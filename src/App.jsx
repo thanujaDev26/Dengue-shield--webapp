@@ -7,6 +7,7 @@ import Dashboard from "./Components/Dashboard/Dashboard.jsx";
 import About from "./Components/AboutUs/About.jsx";
 import Contact from "./Components/ContactUs/Contact.jsx";
 import Login from "./Components/Login/Login.jsx";
+import Signup from "./Components/Login/Signup.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import ProtectedRoute from "./Components/ProtectedRoutes/ProtectedRoute.jsx";
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/sign-in" element={<Login />} />
+          <Route path="/sign-up" element={<Signup />} />
         </Routes>
       </div>
       
