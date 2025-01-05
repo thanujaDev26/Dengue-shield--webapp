@@ -17,7 +17,7 @@ const Login = () => {
     <section className='m-0'>
       
       <div class="flex md:flex-row flex-col p-10 items-center bg-gradient-to-b from-white to-teal-200 min-h-1/2 m-0 w-full">
-        <div class="md:w-2/4 p-12 text-center md:text-center">
+        <div class="md:w-2/4 p-12 text-center md:text-center">        
           <h1 class="text-4xl font-bold text-gray-800 leading-tight pb-5">Welcome Back !</h1>
           <h2 class="text-3xl font-bold text-gray-800 leading-tight md:block hidden"> Please login to continue</h2>
           <img src="images/Login.png" alt="Illustration" class="w-full h-auto object-cover md:block hidden"/>

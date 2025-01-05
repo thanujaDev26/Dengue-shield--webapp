@@ -14,11 +14,11 @@ const Signup = () => {
   }
 
   return (
-    <section className='m-0'>
-      
+    <section className='m-0'>      
       <div class="flex md:flex-row flex-col p-10 items-center bg-gradient-to-b from-white to-teal-200 min-h-1/2 m-0 w-full">
         <div class="md:w-2/4 p-12 text-center md:text-center">
-          <h1 class="text-4xl font-bold text-gray-800 leading-tight pb-5">Welcome to</h1>
+          <h1 class="text-4xl font-bold text-gray-800 leading-tight pb-5 md:hidden block">Welcome!</h1>
+          <h1 class="text-4xl font-bold text-gray-800 leading-tight pb-5 md:block hidden">Welcome to</h1>
           <h2 class="text-3xl font-bold text-gray-800 leading-tight md:block hidden"> Our Dengue Detection and Mitigation System!</h2>
           <img src="images/Sign-up.png" alt="Illustration" class="w-full h-auto object-cover md:block hidden"/>
         </div>
