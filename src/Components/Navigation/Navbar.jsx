@@ -1,19 +1,21 @@
 import { useState } from 'react';
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
+import { Disclosure, DisclosureButton, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon, UserIcon, PlusCircleIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
-import { TurtleIcon } from 'lucide-react';
+import { useAuth } from "../ProtectedRoutes/AuthContext.jsx";
+
+// import { TurtleIcon } from 'lucide-react';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
 }
 
 export default function Navbar() {
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
+    const { isLoggedIn, logout } = useAuth();
+    // const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     const navigation = [
         { name: 'Home', href: '/', current: false },
-        // { name: 'Dashboard', href: '/dashboard', current: false },
         ...(isLoggedIn ? [{ name: 'Dashboard', href: '/dashboard', current: false }] : []),
         { name: 'About Us', href: '/about', current: false },
         { name: 'Contact Us', href: '/contact', current: false },
@@ -61,7 +63,6 @@ export default function Navbar() {
                     <div className="ml-auto flex items-center space-x-4 min-w-[200px] border-0 justify-center">
                         {isLoggedIn ? (
                             <>
-                                
                                 <button
                                     type="button"
                                     className="relative rounded-full p-1 text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300"
@@ -69,8 +70,6 @@ export default function Navbar() {
                                     <span className="sr-only">View notifications</span>
                                     <BellIcon className="size-6" />
                                 </button>
-
-                               
                                 <Menu as="div" className="relative z-10">
                                     <MenuButton className="flex rounded-full focus:outline-none focus:ring-2 focus:ring-gray-300">
                                         <span className="sr-only">Open user menu</span>
@@ -110,7 +109,7 @@ export default function Navbar() {
                                         <MenuItem>
                                             {({ active }) => (
                                                 <button
-                                                    onClick={() => setIsLoggedIn(false)}
+                                                    onClick={() => logout(false)}
                                                     className={classNames(
                                                         active ? 'bg-gray-100' : '',
                                                         'block w-full text-left px-4 py-2 text-sm text-gray-700'
