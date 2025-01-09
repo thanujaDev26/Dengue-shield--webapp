@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Disclosure, DisclosureButton, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon, UserIcon, PlusCircleIcon } from '@heroicons/react/24/outline';
-import { Link } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { useAuth } from "../ProtectedRoutes/AuthContext.jsx";
 
 // import { TurtleIcon } from 'lucide-react';
@@ -12,8 +12,13 @@ function classNames(...classes) {
 
 export default function Navbar() {
     const { isLoggedIn, logout } = useAuth();
+    const navigate = useNavigate();
     // const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+    const onLogoutChange = () =>{
+        logout(false)
+        navigate('/sign-in')
+    }
     const navigation = [
         { name: 'Home', href: '/', current: false },
         ...(isLoggedIn ? [{ name: 'Dashboard', href: '/dashboard', current: false }] : []),
@@ -58,7 +63,6 @@ export default function Navbar() {
                             ))}
                         </div>
                     </div>
-
 
                     <div className="ml-auto flex items-center space-x-4 min-w-[200px] border-0 justify-center">
                         {isLoggedIn ? (
@@ -109,7 +113,8 @@ export default function Navbar() {
                                         <MenuItem>
                                             {({ active }) => (
                                                 <button
-                                                    onClick={() => logout(false)}
+                                                    onClick={onLogoutChange}
+
                                                     className={classNames(
                                                         active ? 'bg-gray-100' : '',
                                                         'block w-full text-left px-4 py-2 text-sm text-gray-700'
