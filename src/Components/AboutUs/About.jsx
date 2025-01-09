@@ -4,13 +4,13 @@ const About = () => {
   return (
     <section className='m-0'>
       {/*top section introduction*/}
-      <div class="flex flex-col md:flex-row items-center bg-transparent min-h-1/2 m-0 w-full p-0">
-        <div class="md:w-1/2 p-12 text-center md:text-center">
-          <h1 class="text-5xl font-bold text-gray-800 leading-tight">Our Dengue Detection<br/>And<br/>Mitigation System</h1>
+      <div className="flex flex-col md:flex-row items-center bg-transparent min-h-1/2 m-0 w-full p-0">
+        <div className="md:w-1/2 p-12 text-center md:text-center">
+          <h1 className="text-5xl font-bold text-gray-800 leading-tight">Our Dengue Detection<br/>And<br/>Mitigation System</h1>
         </div>
 
-        <div class="md:w-1/2 relative">
-          <div class="absolute inset-0 bg-gradient-to-r from-white to-transparent md:block hidden"></div>
+        <div className="md:w-1/2 relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-white to-transparent md:block hidden"></div>
           <img src="images/about_main_img.png" alt="Illustration" class="w-full h-auto object-cover"/>
         </div>
       </div>
@@ -18,7 +18,7 @@ const About = () => {
       {/*Second section mission vision*/} 
       <div className='flex flex-col md:flex-row items-center justify-center w-full px-12 py-3'>
         <div className='md:w-5/12 flex flex-col items-center justify-center'>
-          <div class="w-full flex justify-center items-center bg-transparent md:p-5 md:px-10">
+          <div className="w-full flex justify-center items-center bg-transparent md:p-5 md:px-10">
             <div className='text-start'>
               <h1 className='text-4xl antialiased font-bold text-black p-1'>Our Mission</h1>
             </div>        
@@ -34,7 +34,7 @@ const About = () => {
       </div>
 
       <div className='flex flex-col md:flex-row items-center justify-center w-full px-12 py-3'>   
-          <div class="w-full bg-transparent md:p-5 md:px-10 block sm:hidden">
+          <div className="w-full bg-transparent md:p-5 md:px-10 block sm:hidden">
             <div className='flex justify-center items-center text-start'>
               <h1 className='text-4xl antialiased font-bold text-black p-1'>Our Vision</h1>
             </div>        
@@ -46,7 +46,7 @@ const About = () => {
           <img src="images/about_arrow_left.png" className='hidden sm:block h-auto w-1/8'></img>
         </div>
         <div className='md:w-5/12 flex flex-col items-center justify-center'>
-          <div class="w-full bg-transparent md:p-5 md:px-10 hidden sm:block">
+          <div className="w-full bg-transparent md:p-5 md:px-10 hidden sm:block">
             <div className='flex justify-center items-center text-start'>
               <h1 className='text-4xl antialiased font-bold text-black p-1'>Our Vision</h1>
             </div>        
@@ -57,8 +57,8 @@ const About = () => {
 
       {/*Third section Our Services*/} 
       <div className='w-full px-12 py-3'>
-        <div class="w-full rounded-xl border-2 border-emerald-200 bg-gradient-to-b from-white to-emerald-300 md:block">
-          <div class="w-full bg-transparent md:p-5 md:px-10">
+        <div className="w-full rounded-xl border-2 border-emerald-200 bg-gradient-to-b from-white to-emerald-300 md:block">
+          <div className="w-full bg-transparent md:p-5 md:px-10">
             <div className='flex items-center justify-center'>
               <h1 className='text-4xl antialiased font-bold text-black p-1'>Our Services</h1>
             </div>     
