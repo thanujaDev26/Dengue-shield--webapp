@@ -138,7 +138,7 @@ export default function Navbar() {
                                 </Link>
                                 <span className="text-gray-300">|</span>
                                 <Link
-                                    to="/create-account"
+                                    to="/sign-up"
                                     className="flex items-center hover:text-gray-700 px-3 py-2 text-sm font-medium"
                                 >
                                     <PlusCircleIcon className="h-5 w-5 mr-1" />
