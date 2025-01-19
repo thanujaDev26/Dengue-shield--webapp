@@ -5,7 +5,7 @@ export default function Header() {
     <div className="bg-gradient-to-b from-teal-100 to-transparent min-h-screen flex items-center justify-center py-5">
       
       {/* Card Container */}
-      <div className="w-11/12 md:w-8/12 lg:w-7/12 bg-white rounded-xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+      <div className="w-11/12 md:w-8/12 mt-0 lg:w-7/12 bg-white rounded-xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
         
         {/* Left Section */}
         <div className="w-full md:w-1/2 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-8 flex flex-col justify-between">
@@ -61,7 +61,7 @@ export default function Header() {
         <div className="w-full md:w-1/2 relative">
           <img 
             src="images/Contactus_main.png"
-            className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+            className="w-full  hidden md:block h-full object-cover transform hover:scale-105 transition-transform duration-300"
           />
 
           {/* Overlay Icon */}

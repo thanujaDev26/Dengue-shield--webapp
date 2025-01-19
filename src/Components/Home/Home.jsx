@@ -111,25 +111,30 @@ const Home = () => {
       </div>
 
       {/*Forth Section - Subscribe*/}
-      <div className='w-full flex justify-center items-center bg-gradient-to-r from-teal-100 to-transparent'>
+      <div className='w-full flex justify-center items-center bg-gradient-to-r from-teal-100 to-transparent p-5 m-5'>
         <div className='md:m-5 m-4 rounded-3xl border-0 container md:w-full w-11/12 max-w-7xl'>
           <div className='md:m-5 m-5 text-start'>
             <h1 className='text-3xl antialiased font-bold text-black'>Importance of Our System</h1>
           </div>
           <div>
-            <div className="flex">
+            <div className="flex flex-row">
               <div>
-                <label className="block text-sm/6 font-medium text-gray-900">Username</label>
+                <label className="block text-sm/6 font-medium text-gray-900 pl-5 m-5">Username</label>
               </div>              
-              <div className="">
-                <div className="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">                  
-                  <input type="text" name="username" id="username" className="block min-w-0 grow pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6" placeholder="Enter Your Email Here"/>
+             
+                <div className="flex items-center rounded-md bg-white pl-3 m-3 p-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">                  
+                  
+                  <input type="text" name="username" id="username" className="block min-w-0 grow pl-3 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6" placeholder="Enter Your Email Here"/>                 
                 </div>
+                <div>
+                <button className='border border-gray-700 w-25  rounded-lg m-4 p-2 bg-slate-400'>Subcribe</button>
+                </div> 
+               
               </div>
             </div>
           </div>
         </div>
-      </div>
+      
     </section>
   );
 };
